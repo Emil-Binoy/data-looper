@@ -4,15 +4,22 @@ import { useState } from 'react'
 import { FaRegCopy } from "react-icons/fa6";
 import { IoMdRefresh } from "react-icons/io";
 import { BsStars } from "react-icons/bs";
+import { MdOutlineDone } from "react-icons/md";
 
 const Home = () => {
     const [text, setText] = useState("");
     const [count, setCount] = useState("");
     const [result, setResult] = useState("");
     const [format, setFormat] = useState("");
+    const [copied, setCopied] = useState(false);
 
     const showResult=()=>{
-        if (!text || count<=0) return;
+        if (!text) {
+            return alert("Enter text");
+        }
+        if (isNaN(count)||count<=0){
+            return alert("Enter a valid number");
+        }
 
         let output="";
         for(let i=1; i<=count; i++){
@@ -40,7 +47,8 @@ const Home = () => {
 
         navigator.clipboard.writeText(result)
         .then(()=>{
-            alert("text copied");
+            setCopied(true);
+            setTimeout(()=> setCopied(false),3000);
         })
         .catch(()=>{
             alert("failed to copy");
@@ -113,7 +121,7 @@ const Home = () => {
                                 className='flex items-center gap-1 text-purple-400 hover:text-purple-300 transition'
                                 onClick={copy}
                             >
-                                <FaRegCopy />
+                                {copied? <MdOutlineDone /> : <FaRegCopy />}
                             </button>
                         </div>
                         <div className='mt-8 whitespace-pre-line max-h-60 overflow-y-auto'>
