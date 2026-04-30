@@ -83,8 +83,8 @@ const Home = () => {
                             value={format}
                             onChange={(e)=> setFormat(e.target.value)}
                         >
-                            <option value="number">Numbered list</option>
                             <option value="line">Line by line</option>
+                            <option value="number">Numbered list</option>
                             <option value="bullet">Bullet list</option>
                         </select>
                     </div>
