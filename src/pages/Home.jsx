@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../components/Navbar';
+
 import { useState } from 'react'
 import { FaRegCopy } from "react-icons/fa6";
 import { IoMdRefresh } from "react-icons/io";
@@ -47,11 +47,11 @@ const Home = () => {
         })
     }
   return (
-    <section className='bg-gray-100 dark:bg-gray-900 p-5 flex flex-col items-center justify-center min-h-screen'>
-        <Navbar />
+    <section className='bg-gray-100 dark:bg-gray-900 p-5 flex flex-col items-center justify-center min-h-screen '>
+        
             
             <div
-                className='p-5  rounded-xl w-full max-w-2xl shadow-xl/30 bg-gray-200 dark:bg-gray-800'
+                className='p-5 mt-4  rounded-xl w-full max-w-2xl shadow-xl/30 bg-gray-200 dark:bg-gray-800'
             >
                 <div>
                     <h1 className='text-black dark:text-white'>Enter you text</h1>
@@ -72,6 +72,7 @@ const Home = () => {
                             className='inset-shadow-sm inset-shadow-gray-500 dark:inset-shadow-gray-900 p-2 w-full rounded-lg text-black dark:text-white bg-gray-200 dark:bg-gray-800 my-2'
                             value={count}
                             onChange={(e)=> setCount(e.target.value)}
+                            placeholder='Enter the count'
                             required
                         />
                     </div>

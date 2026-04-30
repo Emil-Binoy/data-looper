@@ -1,5 +1,7 @@
 import React from 'react'
 import Switch from './Switch'
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
   return (
@@ -10,17 +12,23 @@ const Navbar = () => {
         flex justify-between items-center
         px-6 py-3
         text-gray-800 dark:text-white
-        bg-white/5 backdrop-blur-md
+        backdrop-blur-md
         border border-white/10
         rounded-lg
         mt-3
         shadow-lg
+        bg-bg-white/10 
       ">
         
-        <h1 className="text-xl font-bold ">Data Looper</h1>
+        <Link to="/" className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400">Data Looper</Link>
 
         <div className="flex gap-4 items-center">
-          <button>Contact</button>
+          <Link to="/" className="hover:text-purple-400">
+            Home
+          </Link>
+          <Link to="/About" className="hover:text-purple-400">
+            About
+          </Link>
           <Switch/>
         </div>
 
