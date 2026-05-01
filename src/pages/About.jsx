@@ -101,26 +101,7 @@ const About = () => {
           </div>
         </section>
 
-        <footer className="border-t border-slate-200 dark:border-slate-800 pt-16 text-center">
-          <h2 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">Get in touch</h2>
-          <p className="text-slate-500 mb-6">Have feedback or a feature request?</p>
-          <div className="flex flex-col items-center gap-4">
-            <a href="mailto:emilbinoy06@gmail.com" className="flex items-center gap-2 text-slate-900 dark:text-white hover:text-purple-600 dark:hover:text-purple-400 transition-colors font-medium">
-              <FiMail className="w-4 h-4" /> emilbinoy06@gmail.com
-            </a>
-            <div className="flex gap-6 mt-4">
-              <a href="https://github.com/Emil-Binoy" className="p-2 bg-slate-100 dark:bg-slate-900 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
-                <FiGithub className="w-5 h-5 text-slate-600 dark:text-slate-400" />
-              </a>
-              <a href="https://www.linkedin.com/in/emil-binoy-769261325/" className="p-2 bg-slate-100 dark:bg-slate-900 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
-                <FiLinkedin  className="w-5 h-5 text-slate-600 dark:text-slate-400" />
-              </a>
-              <a href="https://emil-binoy.github.io/Portfolio-using-React/" className="p-2 bg-slate-100 dark:bg-slate-900 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
-                <FiGlobe className="w-5 h-5 text-slate-600 dark:text-slate-400" />
-              </a>
-            </div>
-          </div>
-        </footer>
+        
       </main>
     </div>
   );
