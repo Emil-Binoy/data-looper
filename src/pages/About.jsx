@@ -1,6 +1,7 @@
 import React from 'react';
 import { FiRepeat, FiZap, FiLayout, FiTerminal, FiMail, FiGithub, FiGlobe, FiLinkedin  } from 'react-icons/fi';
 import { HiOutlineSparkles, HiOutlineRocketLaunch, HiOutlineShieldCheck } from 'react-icons/hi2';
+import logo from "../assets/logo.png"
 
 const About = () => {
   const features = [
@@ -34,7 +35,9 @@ const About = () => {
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-slate-900 dark:text-white mb-6">
-            About <span className="bg-clip-text text-transparent bg-linear-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400">Data Looper</span>
+            About <span className="flex justify-center mt-5">
+              <img src={logo} alt="logo"className='h-auto w-auto invert-25 dark:invert-0 ' />
+            </span>
           </h1>
           <p className="text-xl text-slate-500 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
             The minimal power-tool for generating repeated, formatted, and structured text without the manual grind.

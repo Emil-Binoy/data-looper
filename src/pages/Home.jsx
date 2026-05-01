@@ -48,7 +48,7 @@ const Home = () => {
         navigator.clipboard.writeText(result)
         .then(()=>{
             setCopied(true);
-            setTimeout(()=> setCopied(false),3000);
+            setTimeout(()=> setCopied(false),2500);
         })
         .catch(()=>{
             alert("failed to copy");
